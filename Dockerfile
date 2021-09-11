@@ -1,4 +1,4 @@
-FROM fedora:latest
+FROM fedora:35
 
 RUN dnf update -y && \
     dnf install -y flatpak flatpak-builder python3-aiohttp python3-tenacity python3-gobject xorg-x11-server-Xvfb ccache zstd && \
