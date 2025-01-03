@@ -171,7 +171,7 @@ jobs:
           # syntax = docker/dockerfile:experimental
           FROM localhost:5000/fedora-base:latest
 
-          RUN --security=insecure flatpak install -y --noninteractive ${{matrix.runtime.remote}} ${{ matrix.runtime.packages }}
+          RUN --security=insecure flatpak install -y --noninteractive ${{ matrix.runtime.packages }}
 
       - name: Build & push the ${{ matrix.runtime.name }} image to Docker Hub
         uses: docker/build-push-action@v3.2.0

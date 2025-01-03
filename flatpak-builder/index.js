@@ -221,7 +221,6 @@ const build = async (manifest, manifestPath, cacheHitKey, config) => {
   const args = [
     `--repo=${config.localRepoName}`,
     '--disable-rofiles-fuse',
-    `--install-deps-from=${config.repositoryName}`,
     '--force-clean',
     `--default-branch=${branch}`,
     `--arch=${config.arch}`
