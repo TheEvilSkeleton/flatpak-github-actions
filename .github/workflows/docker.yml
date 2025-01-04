@@ -13,8 +13,8 @@ jobs:
     strategy:
       matrix:
         runtime:
-          - name: gnome-nightly
-            packages: org.gnome.Platform//master org.gnome.Sdk//master
+          - name: gnome-nightly-with-wine
+            packages: org.gnome.Platform//master org.gnome.Sdk//master org.winehq.Wine//stable-24.08
             remote: gnome-nightly
 
     services:
